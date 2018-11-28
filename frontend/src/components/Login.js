@@ -36,13 +36,6 @@ class Login extends Component {
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-    verifyCallback(response) {
-  if (response) {
-    this.setState({
-      isVerified: true
-    })
-  }
-}
 
     handleInputChange(e) {
       if (!!this.state.errors[e.target.name]) {
